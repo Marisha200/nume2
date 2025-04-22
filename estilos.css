@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea arriba para ver el inicio del formulario */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Fondo degradado sutil (ejemplo estético) */
+    background: linear-gradient(to bottom right, #ece9e6, #ffffff);
+}
+
+.calculator-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 700px; /* Un poco más ancho para descripciones largas */
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; /* Margen superior */
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+h1 {
+    /* Fuente más elegante para el título (ejemplo estético) */
+    font-family: 'Georgia', serif;
+    color: #16a085; /* Un color diferente */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    text-align: left; /* Alinear a la izquierda los títulos de resultados */
+}
+
+.input-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+    text-align: left; /* Alinear etiquetas a la izquierda */
+}
+
+.input-section input[type="text"] {
+    width: calc(100% - 22px); /* Ancho ajustado considerando padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Incluye padding en cálculo de ancho */
+}
+
+.input-section button {
+    /* Botón con color acorde al título (ejemplo estético) */
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 25px; /* Más espacio antes del botón */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.input-section button:hover {
+    background-color: #16a085; /* Oscurecer al pasar el mouse */
+}
+
+.input-section button:disabled { /* Estilo para botón deshabilitado (si se usa) */
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.results-section {
+    margin-top: 30px;
+    text-align: left; /* Alinear contenido de resultados a la izquierda */
+}
+
+.result-item {
+    /* Fondo del resultado más limpio y borde acorde (ejemplo estético) */
+    background-color: #fdfdfd;
+    padding: 18px; /* Un poco más de padding */
+    margin-bottom: 18px; /* Un poco más de espacio */
+    border-radius: 8px;
+    border-left: 5px solid #1abc9c; /* Borde acorde al color del tema */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.result-item strong {
+    font-size: 1.15em; /* Un poco más grande */
+    color: #2c3e50;
+    display: inline-block; /* Para que el span quede al lado */
+    margin-right: 8px; /* Espacio antes del número */
+}
+
+.result-item span {
+    font-weight: bold;
+    font-size: 1.3em; /* Número más destacado */
+    color: #e67e22; /* Otro color para el número (ejemplo estético) */
+    display: inline-block; /* Alinear con el texto strong */
+    vertical-align: baseline; /* Alinear mejor con el texto */
+}
+
+.result-item p {
+    font-size: 0.95em; /* Tamaño legible para descripciones */
+    color: #555;
+    margin-top: 10px; /* Espacio después del número/título */
+    line-height: 1.6; /* Interlineado cómodo para leer */
+    white-space: pre-line; /* Respeta saltos de línea en el JSON si los hubiera */
+}
+
+.error {
+    color: #e74c3c; /* Rojo para errores */
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 1.2em; /* Reservar espacio vertical */
+    text-align: center; /* Centrar mensaje de error */
+}
+
+/* Puedes añadir más reglas aquí para personalizar fuentes, colores, etc. */

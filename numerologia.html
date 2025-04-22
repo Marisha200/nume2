@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Numerología</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Calculadora Numerológica</h1>
+
+        <div class="input-section">
+            <label for="nombres">Nombres (sin apellidos):</label>
+            <input type="text" id="nombres" placeholder="Ej: Ana María">
+
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" placeholder="Ej: García">
+
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" placeholder="Ej: López">
+
+            <label for="apellidoAbuelaP">Apellido Abuela Paterna (Opcional):</label>
+            <input type="text" id="apellidoAbuelaP" placeholder="Ej: Pérez">
+
+            <label for="apellidoAbuelaM">Apellido Abuela Materna (Opcional):</label>
+            <input type="text" id="apellidoAbuelaM" placeholder="Ej: Rodríguez">
+
+            <label for="fechaNacimiento">Fecha de Nacimiento (dd/mm/aaaa):</label>
+            <input type="text" id="fechaNacimiento" placeholder="Ej: 15/08/1990">
+
+            <button id="calcularBtn">Calcular Numerología</button>
+            <p id="error-message" class="error"></p> </div>
+
+        <div id="results-section" class="results-section" style="display: none;">
+            <h2>Tus Números:</h2>
+
+            <div class="result-item">
+                <strong>Número de Alma:</strong> <span id="almaResult">-</span>
+                <p id="almaDescription">Aquí irá la descripción del Número de Alma.</p> </div>
+
+            <div class="result-item">
+                <strong>Número de Personalidad:</strong> <span id="personalidadResult">-</span>
+                <p id="personalidadDescription">Aquí irá la descripción del Número de Personalidad.</p> </div>
+
+            <div class="result-item">
+                <strong>Número de Expresión (Misión de Vida):</strong> <span id="expresionResult">-</span>
+                 <p id="expresionDescription">Aquí irá la descripción del Número de Expresión.</p> </div>
+
+            <div class="result-item">
+                <strong>Camino de Vida:</strong> <span id="caminoVidaResult">-</span>
+                 <p id="caminoVidaDescription">Aquí irá la descripción del Camino de Vida.</p> </div>
+
+            <div class="result-item">
+                <strong>Número de Fuerza:</strong> <span id="fuerzaResult">-</span>
+                <p id="fuerzaDescription">Aquí irá la descripción del Número de Fuerza.</p> </div>
+
+            <div class="result-item">
+                <strong>Número de Equilibrio:</strong> <span id="equilibrioResult">-</span>
+                 <p id="equilibrioDescription">Aquí irá la descripción del Número de Equilibrio.</p> </div>
+        </div> </div> <script src="calculadora.js"></script>
+</body>
+</html>
